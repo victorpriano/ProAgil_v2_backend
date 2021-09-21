@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NGgXj/dmHG22YNV0P3FbWZ0nBDFaNA8Z0nBT5pnSnAImetDc3aFtzLZi8WMtxUVA614ZTwZ4fxLJrFjqeTSNCA==",
+  "success": true,
+  "projectFilePath": "C:\\Dev\\MyProjects\\ProAgil_v2_backend\\ProAgil.Shared\\ProAgil.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\victo\\.nuget\\packages\\flunt\\2.0.4\\flunt.2.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
