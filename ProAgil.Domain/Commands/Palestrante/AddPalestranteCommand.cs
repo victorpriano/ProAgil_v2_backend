@@ -21,13 +21,15 @@ namespace ProAgil.Domain.Commands.Palestrantes
         public string Telefone { get; private set; }
         public string Email { get; private set; }
 
-        public void Validate()
+        public bool Validate()
         {
             AddNotifications(new Contract<Notification>()
                 .Requires()
-                .IsNullOrEmpty(Nome, "Nome não pode ser nulo ou vazio")
-                .IsEmail(Email, "Email inválido")
+                .IsNotNullOrEmpty(Nome, "Nome não pode ser nulo ou vazio")
+                .IsNotEmail(Email, "Email inválido")
             );
+
+            return IsValid;
         }
     }
 }

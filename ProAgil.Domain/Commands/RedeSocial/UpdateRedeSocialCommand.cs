@@ -18,12 +18,14 @@ namespace ProAgil.Domain.Commands.RedeSociais
         public string Nome { get; private set; }
         public string Url { get; private set; }
 
-        public void Validate()
+        public bool Validate()
         {
             AddNotifications(new Contract<Notification>()
                 .Requires()
-                .IsUrl(Url, "O campo não é url")
+                .IsNotUrl(Url, "O campo não é url")
             );
+
+            return IsValid;
         }
     }
 }

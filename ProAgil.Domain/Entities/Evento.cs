@@ -6,6 +6,10 @@ namespace ProAgil.Domain.Entities
 {
     public class Evento : Entity 
     {
+        public Evento()
+        {
+            
+        }
         public Evento(string local, DateTime? dataEvento, string tema, int qtdPessoas, string imagemUrl, string telefone, string email)
         {
             Local = local;

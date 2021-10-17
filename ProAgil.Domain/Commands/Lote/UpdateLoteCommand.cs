@@ -23,12 +23,14 @@ namespace ProAgil.Domain.Commands.Lotes
         public DateTime? DataFim { get; private set; }
         public int Quantidade { get; private set; }
 
-        public void Validate()
+        public bool Validate()
         {
             AddNotifications(new Contract<Notification>()
                 .Requires()
-                .IsNullOrEmpty(Nome, "Nome não pode ser nulo ou vazio")
+                .IsNotNullOrEmpty(Nome, "Nome não pode ser nulo ou vazio")
             );
+
+            return IsValid;
         }
     }
 }

@@ -28,13 +28,17 @@ namespace ProAgil.Domain.Commands.Eventos
         public string Telefone { get; private set; }
         public string Email { get; private set; }
         
-        public void Validate()
+        public bool Validate()
         {
             AddNotifications(new Contract<Notification>()
                 .Requires()
-                .IsNullOrEmpty(Local, "Local não pode ser nulo ou vazio")
-                .IsNullOrEmpty(Tema, "Tema não pode ser nulo ou vazio")
+                .IsNotEmpty(Id, "Id inválido!")
+                .IsNotNullOrEmpty(Local, "Local não pode ser nulo ou vazio")
+                .IsNotNullOrEmpty(Tema, "Tema não pode ser nulo ou vazio")
+                .IsEmail(Email, "E-mail inválido")
             );
+
+            return IsValid;
         }
     }
 }

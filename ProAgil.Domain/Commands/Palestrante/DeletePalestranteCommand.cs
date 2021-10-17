@@ -9,13 +9,15 @@ namespace ProAgil.Domain.Commands.Palestrante
     {
         public Guid Id { get; private set; }
         public string Nome { get; private set; }
-        public void Validate()
+        public bool Validate()
         {
             AddNotifications(new Contract<Notification>()
                 .Requires()
                 .IsEmpty(Id, "Id inválido!")
-                .IsNullOrEmpty(Nome, "tema não pode ser nulo ou vazio")
+                .IsNotNullOrEmpty(Nome, "tema não pode ser nulo ou vazio")
             );
+
+            return IsValid;
         }
     }
 }

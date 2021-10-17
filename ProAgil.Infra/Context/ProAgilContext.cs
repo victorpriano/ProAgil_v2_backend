@@ -1,9 +1,12 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using ProAgil.Domain.Entities;
+using ProAgil.Domain.Entities.Identity;
 
 namespace ProAgil.Infra.Context
 {
-    public class ProAgilContext : DbContext
+    public class ProAgilContext : IdentityDbContext
     {
         public ProAgilContext(DbContextOptions<ProAgilContext> options) : base(options)
         {
@@ -18,9 +21,22 @@ namespace ProAgil.Infra.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Adicionar a relação dos papéis (Identity)
-
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<UserRole>(userRoles => 
+            {
+                userRoles.HasKey(ur => new { ur.UserId, ur.RoleId });
+
+                userRoles.HasOne(ur => ur.Role)
+                                .WithMany(r => r.UserRoles)
+                                .HasForeignKey(ur => ur.RoleId)
+                                .IsRequired();
+
+                userRoles.HasOne(ur => ur.Role)
+                                .WithMany(r => r.UserRoles)
+                                .HasForeignKey(ur => ur.RoleId)
+                                .IsRequired();
+            });
 
             modelBuilder.Entity<PalestranteEvento>()
                 .HasKey(PE => new { PE.EventoId, PE.PalestranteId });

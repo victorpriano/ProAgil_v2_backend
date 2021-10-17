@@ -24,6 +24,7 @@ namespace ProAgil.Domain.Handlers
         public ICommandResult Handle(AddEventoCommand command)
         {
             command.Validate();
+            
             if(!command.IsValid)
                 return new CommandResult(false, "Há algo de errado no seu evento!", command.Notifications);
             
@@ -38,6 +39,7 @@ namespace ProAgil.Domain.Handlers
         public ICommandResult Handle(UpdateEventoCommand command)
         {
             command.Validate();
+
             if(!command.IsValid)
                 return new CommandResult(false, "Há algo de errado no seu evento!", command.Notifications);
             
@@ -51,6 +53,7 @@ namespace ProAgil.Domain.Handlers
         public ICommandResult Handle(DeleteEventoCommand command)
         {
             command.Validate();
+
             if(!command.IsValid)
                 return new CommandResult(false, "Há algo de errado no seu evento!", command.Notifications);
             

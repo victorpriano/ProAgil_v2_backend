@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using ProAgil.Domain.Entities;
-using ProAgil.Domain.Queries;
 
 namespace ProAgil.Domain.Repositories
 {
