@@ -1,0 +1,14 @@
+C:\Dev\MyProjects\ProAgil_v2_backend\ProAgil.Domain\bin\Debug\net5.0\ProAgil.Domain.deps.json
+C:\Dev\MyProjects\ProAgil_v2_backend\ProAgil.Domain\bin\Debug\net5.0\ProAgil.Domain.dll
+C:\Dev\MyProjects\ProAgil_v2_backend\ProAgil.Domain\bin\Debug\net5.0\ref\ProAgil.Domain.dll
+C:\Dev\MyProjects\ProAgil_v2_backend\ProAgil.Domain\bin\Debug\net5.0\ProAgil.Domain.pdb
+C:\Dev\MyProjects\ProAgil_v2_backend\ProAgil.Domain\bin\Debug\net5.0\ProAgil.Shared.dll
+C:\Dev\MyProjects\ProAgil_v2_backend\ProAgil.Domain\bin\Debug\net5.0\ProAgil.Shared.pdb
+C:\Dev\MyProjects\ProAgil_v2_backend\ProAgil.Domain\obj\Debug\net5.0\ProAgil.Domain.csproj.AssemblyReference.cache
+C:\Dev\MyProjects\ProAgil_v2_backend\ProAgil.Domain\obj\Debug\net5.0\ProAgil.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\MyProjects\ProAgil_v2_backend\ProAgil.Domain\obj\Debug\net5.0\ProAgil.Domain.AssemblyInfoInputs.cache
+C:\Dev\MyProjects\ProAgil_v2_backend\ProAgil.Domain\obj\Debug\net5.0\ProAgil.Domain.AssemblyInfo.cs
+C:\Dev\MyProjects\ProAgil_v2_backend\ProAgil.Domain\obj\Debug\net5.0\ProAgil.Domain.csproj.CoreCompileInputs.cache
+C:\Dev\MyProjects\ProAgil_v2_backend\ProAgil.Domain\obj\Debug\net5.0\ProAgil.Domain.dll
+C:\Dev\MyProjects\ProAgil_v2_backend\ProAgil.Domain\obj\Debug\net5.0\ref\ProAgil.Domain.dll
+C:\Dev\MyProjects\ProAgil_v2_backend\ProAgil.Domain\obj\Debug\net5.0\ProAgil.Domain.pdb
